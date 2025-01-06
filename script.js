@@ -20,10 +20,10 @@ function renderTodoList() {
 
   for (let i = 0; i < todoList.length; i++) {
     const { name, date } = todoList[i];
-    const html = `
+    const html = `<div>
       <p>${name}</p>
       <p>${date}</p>
-      <button onclick="deleteTodo(${i})">delete</button>
+      <button onclick="deleteTodo(${i})">delete</button></div>
     `;
     todoListHTML += html;
   }
