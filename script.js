@@ -14,6 +14,10 @@ function saveTodoList() {
   localStorage.setItem("todoList", JSON.stringify(todoList));
 }
 
+document.querySelector(".todoBtn").addEventListener("click", () => {
+  addTodo();
+});
+
 // Функция для отображения списка задач на странице
 function renderTodoList() {
   let todoListHTML = "";
